@@ -1,3 +1,5 @@
+from asyncio import current_task
+
 print ("hello world")
 print ("___________\n| o o |\n| ----- |\n-------------  ")
 
@@ -16,3 +18,14 @@ quantity = 30
 total_price = price * quantity
 
 print (f"You bought {quantity} things for {price}. That costs ${total_price}")
+
+
+current_year = int(input ("please enter current year"))
+
+
+
+age1 = int(input ("please enter your age"))
+if age1 > 0:
+    print ("your age is", age1)
+    dob = current_year - age1
+    print (f"{dob}")
