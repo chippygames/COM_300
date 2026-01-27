@@ -1,0 +1,12 @@
+
+myage:int = 20
+age = int(input("please enter your age"))
+if age < 18:
+    print("Remember, the current minimum age to buy alcohol is 18")
+elif age == myage:
+        print ("Hey! We are the same age!")
+if age< 0:
+    print ("wow, people start using computers early")
+
+
+
