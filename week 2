@@ -8,5 +8,7 @@ elif age == myage:
 if age< 0:
     print ("wow, people start using computers early")
 
+import datetime
+x = datetime.datetime.now()
 
-
+print (x)
