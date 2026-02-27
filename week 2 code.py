@@ -1,4 +1,7 @@
-import datetime
+#import datetime
+from Week4 import age
+
+
 def task1():
     myage:int = 20
     age = int(input("please enter your age"))
@@ -8,6 +11,7 @@ def task1():
             print ("Hey! We are the same age!")
     if age< 0:
         print ("wow, people start using computers early")
+
 def task2():
     day = int(input("please enter your day"))
     month = int(input("please enter your month"))
@@ -15,22 +19,36 @@ def task2():
     if day == 1 and month == 4:
         print ("it is april fools day")
 
-def task3():
-    S = "start"
-    match 1:
-        case s if s day = 1 and month == 4:
-            print("it is april fools day")
-        case s if s day = 1 and month == 1:
-            print ("its new years!")
-        case s if s day = 15 and month == 10:
-            print ("its my birthday")
-        case s if s day = 4 and month == 5
-            print ("may the 4th be with you")
-        case s _ :
-            print("please enter a day and month")
+    Ticket = 4
+    age = int(input("please enter your age"))
+    Infantprice = Ticket - 4
+    childticket = Ticket / 2
+    pensionerticket = Ticket / 3
+    if age <= 5:
+        print(F"infants pay {Infantprice} infants travel free")
+    if age >= 17:
+        print(F"under 16s can buy a child ticket for {childticket}")
+    if age >= 65:
+        print(F"passengers over 65 pay{pensionerticket}")
+        if age < 18 and age <= 65:
+            print(F"passengers over 16 pay{Ticket}")
 
+# def task3():
+#     S = "start"
+#     match 1:
+#         case s if s day = 1 and month == 4:
+#             print("it is april fools day")
+#         case s if s day = 1 and month == 1:
+#             print ("its new years!")
+#         case s if s day = 15 and month == 10:
+#             print ("its my birthday")
+#         case s if s day = 4 and month == 5
+#             print ("may the 4th be with you")
+#         case s _ :
+#             print("please enter a day and month")
+#
 
-
+#
 # speed = 32
 # speedlimit = 21
 # if speed <= speedlimit:
@@ -42,5 +60,5 @@ def task3():
 #
 #
 #
-#
+
 
