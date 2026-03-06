@@ -18,20 +18,20 @@ def task1():
 
 #fix ts bruh
 def task2():
-    day, month, year = birthday.split("/")
+
     day = int(input("please enter your day"))
     month = int(input("please enter your month"))
     year = int(input("please enter your year"))
 
     if day == 1 and month == 4:
-    return ("it is april fools day")
+        return f"it is april fools day - {day}/{month}/{year}"
 
 
     return
 
 
 
-print (task2())
+print(task2())
 
 
 

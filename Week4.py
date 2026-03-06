@@ -39,19 +39,34 @@
 
 
 
-# #finish this bs
+#finish this bs
 # task 2
-#
+
 # timestable = int(input("Enter timestable number: "))
-# for i in range(0,11):
+# for i in range(0,13):
 #    awnser = i * timestable
 #    print(f"{i} x {timestable}{awnser}" )
-#
-# State = 1
-# i = 1
-# while i < 1:
-#     if age == 1
-# age = int(input("please enter your age"))
-# total = age * 0.9
-# print (f"you have to pay {total}")
-#
+
+def first_func():
+    state = 1
+    while state == 1:
+
+        age = int(input("please enter your age"))
+        Ticket = 4
+        Infantprice = Ticket - 4
+        childticket = Ticket / 2
+        pensionerticket = Ticket / 3
+        if age <= 5:
+            print(F"infants pay {Infantprice} infants travel free")
+        elif age < 16:
+            print(F"under 16s can buy a child ticket for {childticket}")
+        elif age >= 65:
+            print(F"passengers over 65 pay{pensionerticket}")
+        else:
+            print(F"passengers over 16 pay{Ticket}")
+
+        state = int(input("please enter 1 if you would like the loop to continue and 0 if you want it to stop "))
+
+
+first_func()
+
