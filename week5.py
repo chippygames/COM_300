@@ -13,25 +13,26 @@
 
 is_booked = "no"
 capacity = 30
-
+#Fix this hell
 # Outer if statement
-if is_booked == "no":
-    # Inner if statement
-    num_students = int(input("How many student?"))
-    computers = int(input("are computers required please enter yes or no:"))
-    if computers == "yes" or computers == "Yes":
-        int(input("how many computers are needed?"))
-percentage = 90
-    elif computers == "no" or computers == "No":
-
-                if num_students <= capacity:
-                    if num_students capacity
-                        print("this room is suitable however be aware of fire hazards")
-                        else
-                    print("The room is suitable")
-            else:
-                print("Sorry, the room is too small")
-            else:
-                print("This room is already booked")
-
+# def booking_system():
+# if is_booked == "no":
+#     # Inner if statement
+#     num_students = int(input("How many student?"))
+#     computers = int(input("are computers required please enter yes or no:"))
+#     if computers == "yes" or computers == "Yes":
+#         int(input("how many computers are needed?"))
+# percentage = 90
+# elif computers == "no" or computers == "No":
+#
+#                 if num_students <= capacity:
+#                     if num_students capacity
+#                         return "this room is suitable however be aware of fire hazards"
+#                 else:
+#                     return "The room is suitable"
+#             else:
+#                 return "Sorry, the room is too small"
+#             else:
+#                 return "This room is already booked"
+#
 # limit = 90 * (capacity/100)
