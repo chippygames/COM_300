@@ -13,8 +13,9 @@
 
 is_booked = "no"
 capacity = 30
-
+#Fix this hell
 # Outer if statement
+
 if is_booked == "no":
     # Inner if statement
     num_students = int(input("How many student?"))

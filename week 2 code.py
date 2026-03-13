@@ -32,11 +32,11 @@ def task2():
         print(F"passengers over 65 pay{pensionerticket}")
         if age < 18 and age <= 65:
             print(F"passengers over 16 pay{Ticket}")
-
+# cba
 # def task3():
-#     S = "start"
+#     s = "start"
 #     match 1:
-#         case s if s day = 1 and month == 4:
+#         case s if day = 1 and month == 4:
 #             print("it is april fools day")
 #         case s if s day = 1 and month == 1:
 #             print ("its new years!")
@@ -44,9 +44,16 @@ def task2():
 #             print ("its my birthday")
 #         case s if s day = 4 and month == 5
 #             print ("may the 4th be with you")
-#         case s _ :
+#         case _ :
 #             print("please enter a day and month")
-#
+
+
+
+
+
+
+
+
 
 #
 # speed = 32

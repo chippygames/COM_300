@@ -1,38 +1,40 @@
-
-#task 1
-# count = 1
-#
-#
-# while count <= 20:
-#     print(count)
-#     count += 1
-#
-
-#task 1.2
-# count = 1
-
-# count = 5
-# while count <= 15:
-#     print(count)
-#     count += 1
+from tkinter.messagebox import RETRY
 
 
+task 1
+count = 1
 
-# task 1.3
-#
 
-#
-# count = 1
-# while count <= 21:
-#     print(count)
-#     count += 2
+while count <= 20:
+    print(count)
+    count += 1
 
- # task 1.4
-#
-# count = 10
-# while count >= -1:
-#     print(count)
-#     count -= 1
+
+task 1.2
+count = 1
+
+count = 5
+while count <= 15:
+    print(count)
+    count += 1
+
+
+
+task 1.3
+
+
+
+count = 1
+while count <= 21:
+    print(count)
+    count += 2
+
+ task 1.4
+
+count = 10
+while count >= -1:
+    print(count)
+    count -= 1
 
 
 
@@ -41,11 +43,14 @@
 
 #finish this bs
 # task 2
+def task_2():
+timestable = int(input("Enter timestable number: "))
+for i in range(0,13):
+   awnser = i * timestable
+   return(f"{i} x {timestable}{awnser}" )
 
-# timestable = int(input("Enter timestable number: "))
-# for i in range(0,13):
-#    awnser = i * timestable
-#    print(f"{i} x {timestable}{awnser}" )
+
+
 
 def first_func():
     state = 1
@@ -66,6 +71,7 @@ def first_func():
             print(F"passengers over 16 pay{Ticket}")
 
         state = int(input("please enter 1 if you would like the loop to continue and 0 if you want it to stop "))
+
 
 
 first_func()
