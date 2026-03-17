@@ -32,6 +32,22 @@ def task2():
         print(F"passengers over 65 pay{pensionerticket}")
         if age < 18 and age <= 65:
             print(F"passengers over 16 pay{Ticket}")
+
+
+    match age:
+        case r if age <= 5:
+            print(f"infants pay {Infantprice}")
+        case r if age >= 17:
+            print(F"under 16s can buy a child ticket for {childticket}")
+        case r if age >= 65:
+            print(f"passengers over 65 pay{pensionerticket}")
+    hobby = "Football"
+    match hobby:
+        case "Football":
+            print(f"infants pay {Infantprice}")
+        case "Golf":
+            print(f"under 16s can buy a child ticket for {childticket}")
+
 # cba
 # def task3():
 #     s = "start"
@@ -41,7 +57,7 @@ def task2():
 #         case s if s day = 1 and month == 1:
 #             print ("its new years!")
 #         case s if s day = 15 and month == 10:
-#             print ("its my birthday")
+#             print ("Its my birthday")
 #         case s if s day = 4 and month == 5
 #             print ("may the 4th be with you")
 #         case _ :
