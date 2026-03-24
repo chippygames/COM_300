@@ -1,17 +1,28 @@
+
+
+
+def calculate_fee(distance):
+    if distance <= 10:
+        return 0
+    elif distance <= 10:
+        return 10
+    elif distance <= 20:
+        return 15
+    elif distance <= 30:
+        return 15
+    elif distance < 40:
+        return 0
+
+    return
+
+
 def assessment_1():
     order_Value = int(input("please enter your order number"))
     distance = int(input("please enter your distance"))
-    cost  = 3.95
+    cost = 3.95
 
+    deliveryfee = calculate_fee(distance)
 
-    if distance <= 10:
-        deliveryfee = 0
-    elif distance <= 10:
-        deliveryfee = 10
-    elif distance <= 20:
-        deliveryfee = 15
-    elif distance <= 30:
-        deliveryfee = 20
 
     total_cost = cost + deliveryfee
 
@@ -19,6 +30,7 @@ def assessment_1():
     print(f"delivery cost is {deliveryfee}")
     print(f"you are {distance} miles away")
     print(f"you paid {cost} dollars")
+    return
 #simple drone delivery service
 
 def assessment_2():
