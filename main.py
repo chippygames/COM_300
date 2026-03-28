@@ -47,32 +47,37 @@ from matplotlib import use
 
 
 
-# def assessment_3():
-    # print("please enter the letter which corresponds with your choice\nA-calculate the area of a rectange\nB-calculate the area of a circle\n C-Display a multiplication Table\n D- find the mean of three numbers")
-    #
-    # userinput =  input("")
-    # if userinput == "A":
-    #     Width =  int(input("please enter the width of the rectangle"))
-    #     Height = int(input("please enter the height of the rectangle"))
-    #     Area_Rectangle = Width * Height
-    #     print (f"the area of the rectangle is {Area_Rectangle}")
-    # elif userinput == "B":
-    #    radius = int(input("please enter the radius of the circle"))
-    #    pi = 3.14159
-    #    Area_Circle = pi * (radius ** 2)
-    #    print (f"the area of the circle is {Area_Circle}")
-    # elif userinput == "C":
-    #     Number = int(input("Please enter a number between 1,10"))
-    #     for i in range(1,11):
-    #         Times_table = Number * i
-    #         print (f"the multiplication table for this number is {Times_table}")
-    # elif userinput == "D":
-    #     Num_1 = int(input("please enter a number"))
-    #     Num_2 = int(input("please enter a number"))
-    #     Num_3 = int(input("please enter a number"))
-    #     result = (Num_1 + Num_2 + Num_3) / 3
-    #     print (f"the mean of the numbers  is {result}")
+def assessment_3():
+    print("please enter the letter which corresponds with your choice\nA-calculate the area of a rectange\nB-calculate the area of a circle\n C-Display a multiplication Table\n D- find the mean of three numbers")
+    userinput =  input("")
+    if userinput == "A":
+        Width =  int(input("please enter the width of the rectangle"))
+        Height = int(input("please enter the height of the rectangle"))
+        Area_Rectangle = Width * Height
+        print (f"the area of the rectangle is {Area_Rectangle}")
+    elif userinput == "B":
+       radius = int(input("please enter the radius of the circle"))
+       pi = 3.14159
+       Area_Circle = pi * (radius ** 2)
+       print (f"the area of the circle is {Area_Circle}")
+    elif userinput == "C":
+        Number = int(input("Please enter a number between 1,10"))
+        for i in range(1,11):
+            Times_table = Number * i
+            print (f"the multiplication table for this number is {Times_table}")
+    elif userinput == "D":
+        Num_1 = int(input("please enter a number"))
+        Num_2 = int(input("please enter a number"))
+        Num_3 = int(input("please enter a number"))
+        result = (Num_1 + Num_2 + Num_3) / 3
+        print (f"the mean of the numbers  is {result}")
+    elif userinput not in str(["A","B","C","D"]):
+        print ("please enter a valid input")
 
+    else
+       Exit = input("type x to exit Program")
+        if Exit == "x":
+            immediateExit = True
 
 
 # def assessment_4():
@@ -85,32 +90,37 @@ from matplotlib import use
     #     print("-",end="")
 
 
-def assessment_5():
-    List = []
-    new_letter = input("Enter letter: ")
-    User_Input = input("please enter a choice from thee menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean")
-        if User_Input == "A":
-            # number_input = input("how many numbers do you want to add")
-            for i in range():
-                input("Please add number")
+# def assessment_5():
+#     #pain fix later
+#     mathList = []
+#     user_Input = input("please enter a choice from thee menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean")
+#     if user_Input == "A":
+#         mathList.insert()
+#         for x in mathList:
+#                 print(mathList[x])
 
 
-def assessment_6():
-    raise NotImplementedError("Assessment 6 has not been attempted")
 
 
-def assessment_7():
-    raise NotImplementedError("Assessment 7 has not been attempted")
+
+#  def assessment_6():
+#     grade_array = [6,5,3,1,2]
+#     grade_array =
 
 
-if __name__ == "__main__":
+
+# def assessment_7():
+#     raise NotImplementedError("Assessment 7 has not been attempted")
+
+
+# if __name__ == "__main__":
     # Uncomment one of the lines below to test that assessment
     
     # print(assessment_1())
     # print(assessment_2())
-    # print(assessment_3())
+    print(assessment_3())
     # print(assessment_4())
-    print(assessment_5())
+    # print(assessment_5())
     # print(assessment_6())
     # print(assessment_7())
     pass
