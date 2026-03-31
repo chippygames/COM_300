@@ -47,42 +47,41 @@ from matplotlib import use
 
 
 
-def assessment_3():
-    print("please enter the letter which corresponds with your choice\nA-calculate the area of a rectange\nB-calculate the area of a circle\n C-Display a multiplication Table\n D- find the mean of three numbers")
-    userinput =  input("")
-    if userinput == "A":
-        Width =  int(input("please enter the width of the rectangle"))
-        Height = int(input("please enter the height of the rectangle"))
-        Area_Rectangle = Width * Height
-        print (f"the area of the rectangle is {Area_Rectangle}")
-    elif userinput == "B":
-       radius = int(input("please enter the radius of the circle"))
-       pi = 3.14159
-       Area_Circle = pi * (radius ** 2)
-       print (f"the area of the circle is {Area_Circle}")
-    elif userinput == "C":
-        Number = int(input("Please enter a number between 1,10"))
-        for i in range(1,11):
-            Times_table = Number * i
-            print (f"the multiplication table for this number is {Times_table}")
-    elif userinput == "D":
-        Num_1 = int(input("please enter a number"))
-        Num_2 = int(input("please enter a number"))
-        Num_3 = int(input("please enter a number"))
-        result = (Num_1 + Num_2 + Num_3) / 3
-        print (f"the mean of the numbers  is {result}")
-    elif userinput not in str(["A","B","C","D"]):
-        print ("please enter a valid input")
-
-    else
-       Exit = input("type x to exit Program")
-        if Exit == "x":
-            immediateExit = True
+# def assessment_3():
+#     print("please enter the letter which corresponds with your choice\nA-calculate the area of a rectange\nB-calculate the area of a circle\n C-Display a multiplication Table\n D- find the mean of three numbers")
+#     userinput =  input("")
+#     if userinput == "A":
+#         Width =  int(input("please enter the width of the rectangle"))
+#         Height = int(input("please enter the height of the rectangle"))
+#         Area_Rectangle = Width * Height
+#         print (f"the area of the rectangle is {Area_Rectangle}")
+#     elif userinput == "B":
+#        radius = int(input("please enter the radius of the circle"))
+#        pi = 3.14159
+#        Area_Circle = pi * (radius ** 2)
+#        print (f"the area of the circle is {Area_Circle}")
+#     elif userinput == "C":
+#         Number = int(input("Please enter a number between 1,10"))
+#         for i in range(1,11):
+#             Times_table = Number * i
+#             print (f"the multiplication table for this number is {Times_table}")
+#     elif userinput == "D":
+#         Num_1 = int(input("please enter a number"))
+#         Num_2 = int(input("please enter a number"))
+#         Num_3 = int(input("please enter a number"))
+#         result = (Num_1 + Num_2 + Num_3) / 3
+#         print (f"the mean of the numbers  is {result}")
+#     elif userinput not in str(["A","B","C","D"]):
+#         print ("please enter a valid input")
+#
+#     else
+#        Exit = input("type x to exit Program")
+#         if Exit == "x":
 
 
 # def assessment_4():
-    # # CoordinateX = int(input("CoordinateX: "))
-    # # CoordinateY = int(input("CoordinateY: "))
+    #  CoordinateX = int(input("CoordinateX: "))
+    #  CoordinateY = int(input("CoordinateY: "))
     # for i in range(1,101):
     #     if i == 10:
     #         print("-,\n")
@@ -103,9 +102,32 @@ def assessment_3():
 
 
 
-#  def assessment_6():
-#     grade_array = [6,5,3,1,2]
-#     grade_array =
+# def assessment_6():
+#     arr = [6, 5, 3, 1, 2]
+#     arr.sort()
+#     arr[0] = 67
+#     arr[1] = 69
+#     arr[2] = 71
+#     arr[3] = 72
+#     arr[4] = 73
+#     temp_value = arr[0]
+#     for r in range(len(arr)):
+#         print(arr[0], arr[r], arr[r + 1])
+#     if arr[r] > temp_value:
+#      arr[r] = temp_value
+#
+# # one of these works
+#     arr = [6, 5, 3, 1, 2]
+#     arr[0] = 67
+#     arr[1] = 69
+#     arr[2] = 71
+#     arr[3] = 72
+#     arr[4] = 73
+#     temp_value = arr[0]
+#     for r in range(len(arr)):
+#         print(arr[r])
+#         if arr[r] > temp_value:
+#             arr[r] = temp_value
 
 
 
@@ -118,9 +140,9 @@ def assessment_3():
     
     # print(assessment_1())
     # print(assessment_2())
-    print(assessment_3())
+    # print(assessment_3())
     # print(assessment_4())
     # print(assessment_5())
-    # print(assessment_6())
+    print(assessment_6())
     # print(assessment_7())
     pass
