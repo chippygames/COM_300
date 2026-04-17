@@ -1,7 +1,3 @@
-from dateutil.utils import within_delta
-from matplotlib import use
-
-
 #
 # def calculate_fee(distance):
 #     if distance <= 10:
@@ -74,7 +70,7 @@ from matplotlib import use
 #     elif userinput not in str(["A","B","C","D"]):
 #         print ("please enter a valid input")
 #
-#     else
+#     else:
 #        Exit = input("type x to exit Program")
 #         if Exit == "x":
 
@@ -102,32 +98,28 @@ from matplotlib import use
 
 
 
-# def assessment_6():
-#     arr = [6, 5, 3, 1, 2]
-#     arr.sort()
-#     arr[0] = 67
-#     arr[1] = 69
-#     arr[2] = 71
-#     arr[3] = 72
-#     arr[4] = 73
-#     temp_value = arr[0]
-#     for r in range(len(arr)):
-#         print(arr[0], arr[r], arr[r + 1])
-#     if arr[r] > temp_value:
-#      arr[r] = temp_value
-#
-# # one of these works
-#     arr = [6, 5, 3, 1, 2]
-#     arr[0] = 67
-#     arr[1] = 69
-#     arr[2] = 71
-#     arr[3] = 72
-#     arr[4] = 73
-#     temp_value = arr[0]
-#     for r in range(len(arr)):
-#         print(arr[r])
-#         if arr[r] > temp_value:
-#             arr[r] = temp_value
+def assessment_6():
+    #     arr = [6, 5, 3, 1, 2]
+    #     arr.sort()
+    #     arr[0] = 67
+    #     arr[1] = 69
+    #     arr[2] = 71
+    #     arr[3] = 72
+    #     arr[4] = 73
+    #     temp_value = arr[0]
+    #     for r in range(len(arr)):
+    #         print(arr[0], arr[r], arr[r + 1])
+    #     if arr[r] > temp_value:
+    #      arr[r] = temp_value
+
+    # one of these works
+    arr = [6, 5, 3, 1, 2]
+    arr[0] = 67
+    temp_value = arr[2]
+    for r in range(len(arr)):
+        if arr[r] < temp_value:
+            temp_value = arr[r]
+            print(arr[r])
 
 
 
@@ -135,7 +127,7 @@ from matplotlib import use
 #     raise NotImplementedError("Assessment 7 has not been attempted")
 
 
-# if __name__ == "__main__":
+if __name__ == "__main__":
     # Uncomment one of the lines below to test that assessment
     
     # print(assessment_1())
@@ -145,4 +137,3 @@ from matplotlib import use
     # print(assessment_5())
     print(assessment_6())
     # print(assessment_7())
-    pass
