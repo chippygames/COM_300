@@ -31,6 +31,7 @@
 #     return
 #finished?
 #simple drone delivery service
+import math
 
 
 # def assessment_2():
@@ -82,18 +83,19 @@
 
 
 
-def assessment_4():
-     CoordinateX = int(input("please enter a coordinate between 1 and 10"))
-     CoordinateY = int(input("please enter a coordinate between 1 and 10"))
-     coordinates = CoordinateX * CoordinateY
-     i = 0
-     for row in range (1,11):
-         for col in range(1,11):
-            print("-", end="")
-            if coordinates == row and col:
-                print("X")
-         print()
-
+# def assessment_4():
+#      CoordinateX = int(input("please enter a coordinate between 1 and 10"))
+#      CoordinateY = int(input("please enter a coordinate between 1 and 10"))
+#      coordinates = CoordinateX * CoordinateY
+#      i = 0
+#      for row in range (1,11):
+#          for col in range(1,11):
+#              print (row,col), end="")
+#             # print("-", end="")
+#             if coordinates == row and col:
+#                 print("X")
+#          print()
+# give up
 
 
 # for i in range(1,101):
@@ -103,20 +105,48 @@ def assessment_4():
     #         print("-",end="")
 
 
-# def assessment_5():
-#     #pain fix later
-#     mathList = []
-#     user_Input = input("please enter a choice from thee menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean")
-#     if user_Input == "A":
-#         mathList.insert()
-#         for x in mathList:
-#                 print(mathList[x])
+def assessment_5():
+exit = "X"
+while exit.lower() == "X":
+    #pain fix later "loop everything so it updates after all questions done
+    math_List = []
+    user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean")
+    if user_Input.lower() == "A":
+        how_many =(int(input("how many numbers you would like to add\n")))
+        for i in range(how_many):
+            number = input("please enter your number")
+            math_List.append(number)
+            print(math_List[i])
+        print(math_List)
+    if user_Input.lower() == "B":
+        print (math_List)
+
+    if user_Input.lower() == "C":
+        order_new = (int(input("please enter what element you would like to replace")))
+        new_number = (int(input("please enter your number")))
+        print (math_List[order_new])
+        math_List.append(new_number)
+        print(math_List)
+
+    if user_Input.lower() == "D":
+        math_List = []
+        for i in range(len(math_List)):
+            result = math_List[i]
+            math_List.append(result)
+            print(math_List)
+    if user_Input.lower() == "E":
+        big_number = max(math_List)
+        print(f"the largest number in the list is {big_number}")
+
+    else:
+        print("please enter a Valid Letter from the menu")
+        #make loop back to menu
 
 
+        if user_Input.lower() == "X":
+            break
 
-
-
-# def assessment_6():
+        # def assessment_6():
     #     arr = [6, 5, 3, 1, 2]
     #     arr.sort()
     #     arr[0] = 67
@@ -156,7 +186,7 @@ if __name__ == "__main__":
     # print(assessment_1())
     # print(assessment_2())
     # print(assessment_3())
-    print(assessment_4())
-    # print(assessment_5())
+    # print(assessment_4())
+    print(assessment_5())
     # print(assessment_6())
     # print(assessment_7())
