@@ -32,6 +32,7 @@
 #finished?
 #simple drone delivery service
 import math
+from sys import flags
 
 
 # def assessment_2():
@@ -105,73 +106,78 @@ import math
     #         print("-",end="")
 
 
-def assessment_5():
-exit = "X"
-while exit.lower() == "X":
-    #pain fix later "loop everything so it updates after all questions done
-    math_List = []
-    user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean")
-    if user_Input.lower() == "A":
-        how_many =(int(input("how many numbers you would like to add\n")))
-        for i in range(how_many):
-            number = input("please enter your number")
-            math_List.append(number)
-            print(math_List[i])
-        print(math_List)
-    if user_Input.lower() == "B":
-        print (math_List)
-
-    if user_Input.lower() == "C":
-        order_new = (int(input("please enter what element you would like to replace")))
-        new_number = (int(input("please enter your number")))
-        print (math_List[order_new])
-        math_List.append(new_number)
-        print(math_List)
-
-    if user_Input.lower() == "D":
-        math_List = []
-        for i in range(len(math_List)):
-            result = math_List[i]
-            math_List.append(result)
-            print(math_List)
-    if user_Input.lower() == "E":
-        big_number = max(math_List)
-        print(f"the largest number in the list is {big_number}")
-
-    else:
-        print("please enter a Valid Letter from the menu")
-        #make loop back to menu
-
-
-        if user_Input.lower() == "X":
-            break
-
-        # def assessment_6():
-    #     arr = [6, 5, 3, 1, 2]
-    #     arr.sort()
-    #     arr[0] = 67
-    #     arr[1] = 69
-    #     arr[2] = 71
-    #     arr[3] = 72
-    #     arr[4] = 73
-    #     temp_value = arr[0]
-    #     for r in range(len(arr)):
-    #         print(arr[0], arr[r], arr[r + 1])
-    #     if arr[r] > temp_value:
-    #      arr[r] = temp_value
-
-    # one of these works
-
-
-    # arr = [6, 5, 3, 1, 2]
+# def assessment_5():
+    # # pain fix later "loop everything so it updates after all questions done
     #
-    # for r in range(len(arr)):
-    #     print (arr)
-    #     arr[0] , arr[r] = arr[r] , arr[0]
-    # print (arr)
-    # print (f"the value stored in arr[0] is {arr[0]}")
-    # this one somehow works
     #
+    # math_List = []
+    #
+    # while True:
+    #     user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean\nE-Find the largest number in the list\nX-Exit")
+    #
+    #
+    #     if user_Input.lower() == "A":
+    #         how_many =(int(input("how many numbers you would like to add\n")))
+    #         for i in range(how_many):
+    #             number = input("please enter your number")
+    #             math_List.append(number)
+    #             return math_List[i]
+    #         print (math_List)
+    #
+    #     elif user_Input.lower() == "B":
+    #         print (math_List)
+    #
+    #     elif user_Input.lower() == "C":
+    #         order_new = (int(input("please enter what element you would like to replace")))
+    #         new_number = (int(input("please enter your number")))
+    #         print (math_List[order_new])
+    #         math_List.append(new_number)
+    #         print (math_List)
+    #
+    #     elif user_Input.lower() == "D":
+    #         math_List = []
+    #         for i in range(len(math_List)):
+    #             result = math_List[i]
+    #             math_List.append(result)
+    #             print (math_List)
+    #
+    #     elif user_Input.lower() == "E":
+    #         big_number = max(math_List)
+    #         print(f"the largest number in the list is {big_number}")
+    #
+    #     elif user_Input.lower() == "X":
+    #             print("thank you for using this program")
+    #             break
+    #         else:
+    #             # Use 'not in' to check against a list of valid options
+    #     else user_Input.upper() not in ["A", "B", "C", "D", "E", "X"]:
+    #              print("Please enter a valid letter from the menu.")
+    #             break
+
+
+
+def assessment_6():
+        # arr = [6, 5, 3, 1, 2]
+        # arr.sort()
+        # arr[0] = 67
+        # arr[1] = 69
+        # arr[2] = 71
+        # arr[3] = 72
+        # arr[4] = 73
+        # temp_value = arr[0]
+        # for r in range(len(arr)):
+        #     print(arr[0], arr[r], arr[r + 1])
+        # if arr[r] > temp_value:
+        #  arr[r] = temp_value
+
+    arr = [6, 5, 3, 1, 2]
+    for r in range(len(arr)):
+        print (arr)
+        arr[0] , arr[r] = arr[r] , arr[0]
+    print (arr)
+    print (f"the value stored in arr[0] is {arr[0]}")
+
+
 
 
 
@@ -187,6 +193,6 @@ if __name__ == "__main__":
     # print(assessment_2())
     # print(assessment_3())
     # print(assessment_4())
-    print(assessment_5())
-    # print(assessment_6())
+    # print(assessment_5())
+    print(assessment_6())
     # print(assessment_7())
