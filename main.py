@@ -1,4 +1,9 @@
-#
+
+
+
+from Charachter import Character
+
+
 # def calculate_fee(distance):
 #     if distance <= 10:
 #         return 0
@@ -84,75 +89,64 @@ from sys import flags
 
 
 
-# def assessment_4():
-#      CoordinateX = int(input("please enter a coordinate between 1 and 10"))
-#      CoordinateY = int(input("please enter a coordinate between 1 and 10"))
-#      coordinates = CoordinateX * CoordinateY
-#      i = 0
-#      for row in range (1,11):
-#          for col in range(1,11):
-#              print (row,col), end="")
-#             # print("-", end="")
-#             if coordinates == row and col:
-#                 print("X")
-#          print()
-# give up
+def assessment_4():
+     coordinateX = int(input("please enter a coordinate between 1 and 10"))
+     coordinateY = int(input("please enter a coordinate between 1 and 10"))
+
+     for row in range (1,11):
+         for col in range(1,11):
+            if coordinateY == row and coordinateX == col:
+                print("X", end="")
+            else:
+                print("-", end="")
+         print()
 
 
-# for i in range(1,101):
-    #     if i == 10:
-    #         print("-,\n")
-    #     for d in range (0,11):
-    #         print("-",end="")
+def assessment_5():
+    # pain fix later "loop everything so it updates after all questions done
+    math_List = []
+    while True:
+        user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean\nE-Find the largest number in the list\nX-Exit")
 
 
-# def assessment_5():
-    # # pain fix later "loop everything so it updates after all questions done
-    #
-    #
-    # math_List = []
-    #
-    # while True:
-    #     user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean\nE-Find the largest number in the list\nX-Exit")
-    #
-    #
-    #     if user_Input.lower() == "A":
-    #         how_many =(int(input("how many numbers you would like to add\n")))
-    #         for i in range(how_many):
-    #             number = input("please enter your number")
-    #             math_List.append(number)
-    #             return math_List[i]
-    #         print (math_List)
-    #
-    #     elif user_Input.lower() == "B":
-    #         print (math_List)
-    #
-    #     elif user_Input.lower() == "C":
-    #         order_new = (int(input("please enter what element you would like to replace")))
-    #         new_number = (int(input("please enter your number")))
-    #         print (math_List[order_new])
-    #         math_List.append(new_number)
-    #         print (math_List)
-    #
-    #     elif user_Input.lower() == "D":
-    #         math_List = []
-    #         for i in range(len(math_List)):
-    #             result = math_List[i]
-    #             math_List.append(result)
-    #             print (math_List)
-    #
-    #     elif user_Input.lower() == "E":
-    #         big_number = max(math_List)
-    #         print(f"the largest number in the list is {big_number}")
-    #
-    #     elif user_Input.lower() == "X":
-    #             print("thank you for using this program")
-    #             break
-    #         else:
-    #             # Use 'not in' to check against a list of valid options
-    #     else user_Input.upper() not in ["A", "B", "C", "D", "E", "X"]:
-    #              print("Please enter a valid letter from the menu.")
-    #             break
+        if user_Input.lower() == "a":
+            how_many =(int(input("how many numbers you would like to add\n")))
+            for i in range(how_many):
+                number = int(input("please enter your number"))
+                math_List.append(number)
+            print (math_List)
+
+        elif user_Input.lower() == "b":
+            for i in math_List:
+                print(i)
+
+        elif user_Input.lower() == "c":
+            order_new = (int(input("please enter what element you would like to replace")))
+            new_number = (int(input("please enter your number")))
+            print (math_List[order_new])
+            math_List[order_new] = new_number
+            print (math_List)
+
+        elif user_Input.lower() == "d":
+            count = 0
+            tally = 0
+            for i in range(len(math_List)):
+                tally += math_List[i]
+                count += 1
+            awnser = tally/count
+            print(awnser)
+
+        elif user_Input.lower() == "e":
+            big_number = max(math_List)
+            print(f"the largest number in the list is {big_number}")
+
+        elif user_Input.lower() == "x":
+                print("thank you for using this program")
+                break
+
+        else: user_Input.upper() == "A", "B", "C", "D", "E", "X"
+        print("Please enter a valid letter from the menu.")
+
 
 
 
@@ -172,27 +166,38 @@ def assessment_6():
 
     arr = [6, 5, 3, 1, 2]
     for r in range(len(arr)):
-        print (arr)
-        arr[0] , arr[r] = arr[r] , arr[0]
-    print (arr)
-    print (f"the value stored in arr[0] is {arr[0]}")
+        #     print (arr)
+        #     arr[0] , arr[r] = arr[r] , arr[0]
+        # print (arr)
+        print (f"the value stored in arr[0] is {arr[0]} and the other value is {arr[r]}")
 
 
 
 
 
 
-# def assessment_7():
-#     raise NotImplementedError("Assessment 7 has not been attempted")
+
+ def assessment_7():
+
+    player1 = Character("luke",100,50,100)
+    player2 = Character("bob",100,50,100)
+
+
+    player1.info()
+
+
+
+
+
+
 
 
 if __name__ == "__main__":
-    # Uncomment one of the lines below to test that assessment
-    
+
     # print(assessment_1())
     # print(assessment_2())
     # print(assessment_3())
     # print(assessment_4())
     # print(assessment_5())
-    print(assessment_6())
-    # print(assessment_7())
+    # print(assessment_6())
+    print(assessment_7())
