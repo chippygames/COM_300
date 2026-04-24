@@ -7,7 +7,7 @@ class Character:
         self.defence = defence
 
     def info(self):
-        return f"Character:{self.name} Health{self.health}/100 | Attack:{self.attack} Defence{self.defence}"
+        return f"Character:{self.name}|Health:{self.health}/100|Attack:{self.attack}|Defence{self.defence}"
 
 
     def take_damage(self, damage):
