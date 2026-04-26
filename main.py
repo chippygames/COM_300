@@ -1,4 +1,3 @@
-from tkinter.messagebox import YESNO
 
 from character import Character
 #
@@ -36,25 +35,34 @@ from character import Character
 #
 
 # def assessment_2():
+#
 #     num = int(input("please enter a number between 1,20"))
+#     num2 = int(input("please enter a second number between 1,20"))
+#     num_total = num + num2
 #     if num > 20:
-#         print("sorry the number needs to be less than 20")
-#         second_Try = int(input("would you like to enter a second number?"))
-#         movednumber = second_Try + num
-#     if second_Try > 20:
-#         print("sorry the number needs to be less than 20")
-#         for i in range(1,21):
-#         if num == i:
-#             print("x",end="")
-#         elif    print("-", end="")
-#             if second_Try == "Yes":
-#                 for j in range(1,21):
-#                     if movednumber == j:
-#                         print("x",end="")
+#         if num2 > 20:
+#             print("sorry the numbers needs to be less than 20")
+#     for i in range(1,21):
+#         for j in range(1,21):
+#             if num_total == j:
+#                 print("x", end="")
+#             else:
+#                 print("-", end="")
+#                 if num == i:
+#                     print("x",end="")
 #                 else:
-#                     print("-",end ="")
-# #50-59 screenshot remeber
-# #add comments
+#                     print("-", end="")
+#
+#
+#atempted how did that happen
+
+
+#50-59 screenshot remeber
+
+
+
+
+#add comments
 
 
 
@@ -63,64 +71,79 @@ from character import Character
 #     while True:
 #         print("please enter the letter which corresponds with your choice\nA-calculate the area of a rectange\nB-calculate the area of a circle\n C-Display a multiplication Table\n D- find the mean of three numbers\n X- Exit the program")
 #         userinput =  input("")
-#         if userinput == "A".lower():
+#         if userinput == "a".lower():
 #             Width =  int(input("please enter the width of the rectangle"))
 #             Height = int(input("please enter the height of the rectangle"))
 #             Area_Rectangle = Width * Height
 #             print (f"the area of the rectangle is {Area_Rectangle}")
-#         elif userinput == "B".lower():
+#         elif userinput == "b".lower():
 #            radius = int(input("please enter the radius of the circle"))
 #            pi = 3.14159
 #            Area_Circle = pi * (radius ** 2)
 #            print (f"the area of the circle is {Area_Circle}")
-#         elif userinput.lower() == "C".lower():
+#         elif userinput.lower() == "c".lower():
 #             Number = int(input("Please enter a number between 1,10"))
 #             for i in range(1,11):
 #                 Times_table = Number * i
 #                 print (f"the multiplication table for this number is {Times_table}")
-#         elif userinput == "D".lower():
+#         elif userinput == "d".lower():
 #             Num_1 = int(input("please enter a number"))
 #             Num_2 = int(input("please enter a number"))
 #             Num_3 = int(input("please enter a number"))
 #             result = (Num_1 + Num_2 + Num_3) / 3
 #             print (f"the mean of the numbers  is {result}")
-#         if userinput == "X".lower():
+#         if userinput == "x".lower():
 #             break
 #         elif userinput not in str(["A","B","C","D","X"]):
 #             print ("Sorry, your input was not recognised, please enter either A,B,C,D,X")
-
+#
 
 # finished
+#sike upper lower case or whatever needs to be fixed.
 
 
 
-def assessment_4():
-     coordinateX = int(input("please enter a coordinate between 1 and 10"))
-     coordinateY = int(input("please enter a coordinate between 1 and 10"))
+# def assessment_4():
+#     coordinateX = int(input("please enter a coordinate between 1 and 10"))
+#     coordinateY = int(input("please enter a coordinate between 1 and 10"))
+#     while True:
+#      for row in range (1,11):
+#          for col in range(1,11):
+#             if coordinateY == row and coordinateX == col:
+#                 print("X", end="")
+#             else:
+#                 print("-", end="")
+#          print()
+#
+#
+#     user_move = (input("'w','a','s', 'd' or 'x'")).lower()
+#
+#     if user_move == "w":
+#         if coordinateY > 1:
+#             coordinateY -= 1
+#
+#         elif user_move == "a":
+#             if coordinateX > 1:
+#                 coordinateX -= 1
+#
+#     elif user_move == "s":
+#         if coordinateY < 1:
+#             coordinateY += 1
+#
+#     elif user_move == "d":
+#         if coordinateX < 1:
+#             coordinateX += 1
+#
+#     elif user_move == "x":
+#     break
 
-     for row in range (1,11):
-         for col in range(1,11):
-            if coordinateY == row and coordinateX == col:
-                print("X", end="")
-            else:
-                print("-", end="")
-         print()
-    user_move = int(input("'w','a','s', 'd' or 'x'"))
-    if user_move == w
-
-
-        elif user_move == a
-        elif user_move == s
-        elif user_move == d
-        else user_move == x
-        break
-
+#what??? why not work
 
 # def assessment_5():
 #     # pain fix later "loop everything so it updates after all questions done
 #     math_List = []
 #     while True:
-#         user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean\nE-Find the largest number in the list\nX-Exit")
+#         user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean\nE-Find the largest number in the list\nF-All instances of the number you selected will be deleted.\nX-Exit")
 #
 #
 #         if user_Input.lower() == "a":
@@ -157,38 +180,43 @@ def assessment_4():
 #         elif user_Input.lower() == "x":
 #                 print("thank you for using this program")
 #                 break
+#         elif user_Input.lower() == "f":
+#           replace_delete = int(input("please what number would you like to replace"))
+#           if replace_delete == (math_List):
+#               math_List.remove(math_List[replace_delete])
 #
-#         else: user_Input.upper() == "A", "B", "C", "D", "E", "X"
+#
+#         else: user_Input.upper() == "A", "B", "C", "D", "E", "X","F",
 #         print("Please enter a valid letter from the menu.")
+#fuck that
 
 
 
-
-def assessment_6():
-
-    arr = [6, 5, 3, 1, 2]
-    for r in range(len(arr)):
-        if arr[r] < arr[0]:
-            temp_value = arr[0]
-            arr[0] = arr[r]
-            arr[r] = temp_value
-    print (arr)
-
-
-def assessment_7():
-
-    player1 = Character("luke",100,50,100)
-    player2 = Character("bob",100,50,100)
-
-
-    print(player1.info())
-    print(player2.info())
-
-    player1.heal(200)
-
-    player1.attack_target(player2)
-
-    print(player1.info())
+# def assessment_6():
+#
+#     arr = [6, 5, 3, 1, 2]
+#     for r in range(len(arr)):
+#         if arr[r] < arr[0]:
+#             temp_value = arr[0]
+#             arr[0] = arr[r]
+#             arr[r] = temp_value
+#     print (arr)
+#
+#
+# def assessment_7():
+#
+#     player1 = Character("luke",100,50,100)
+#     player2 = Character("bob",100,50,100)
+#
+#
+#     print(player1.info())
+#     print(player2.info())
+#
+#     player1.heal(200)
+#
+#     player1.attack_target(player2)
+#
+#     print(player1.info())
 
 
 
@@ -202,7 +230,7 @@ if __name__ == "__main__":
     # print(assessment_1())
     # print(assessment_2())
     # print(assessment_3())
-    print(assessment_4())
-    # print(assessment_5())
+    # print(assessment_4())
+    print(assessment_5())
     # print(assessment_6())
     # print(assessment_7())
