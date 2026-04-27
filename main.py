@@ -54,10 +54,8 @@ from character import Character
 #                     print("-", end="")
 #
 #
-#atempted how did that happen
+#atempted how did that happen 60-69
 
-
-#50-59 screenshot remeber
 
 
 
@@ -141,68 +139,94 @@ from character import Character
 
 # def assessment_5():
 #     # pain fix later "loop everything so it updates after all questions done
-#     math_List = []
-#     while True:
-#         user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean\nE-Find the largest number in the list\nF-All instances of the number you selected will be deleted.\nX-Exit")
-#
-#
-#         if user_Input.lower() == "a":
-#             how_many =(int(input("how many numbers you would like to add\n")))
-#             for i in range(how_many):
-#                 number = int(input("please enter your number"))
-#                 math_List.append(number)
-#             print (math_List)
-#
-#         elif user_Input.lower() == "b":
-#             for i in math_List:
-#                 print(i)
-#
-#         elif user_Input.lower() == "c":
-#             order_new = (int(input("please enter what element you would like to replace")))
-#             new_number = (int(input("please enter your number")))
-#             print (math_List[order_new])
-#             math_List[order_new] = new_number
-#             print (math_List)
-#
-#         elif user_Input.lower() == "d":
-#             count = 0
-#             tally = 0
-#             for i in range(len(math_List)):
-#                 tally += math_List[i]
-#                 count += 1
-#             awnser = tally/count
-#             print(awnser)
-#
-#         elif user_Input.lower() == "e":
-#             big_number = max(math_List)
-#             print(f"the largest number in the list is {big_number}")
-#
-#         elif user_Input.lower() == "x":
-#                 print("thank you for using this program")
-#                 break
-#         elif user_Input.lower() == "f":
-#           replace_delete = int(input("please what number would you like to replace"))
-#           if replace_delete == (math_List):
-#               math_List.remove(math_List[replace_delete])
-#
-#
-#         else: user_Input.upper() == "A", "B", "C", "D", "E", "X","F",
-#         print("Please enter a valid letter from the menu.")
 #fuck that
+#60-69 list limit
+
+
+    # math_List = []
+    # while True:
+    #     user_Input = input("please enter a choice from the menu\nA-add numbers\nB-Display all values\nC-Replace one number\nD-Calculate the mean\nE-Find the largest number in the list\nF-All instances of the number you selected will be deleted.\nX-Exit")
+    #
+    #
+    #     if user_Input.lower() == "a":
+    #         how_many =(int(input("how many numbers you would like to add\n")))
+    #         for i in range(how_many):
+    #             number = int(input("please enter your number"))
+    #             math_List.append(number)
+    #         print (math_List)
+    #
+    #     elif user_Input.lower() == "b":
+    #         for i in math_List:
+    #             print(i)
+    #
+    #     elif user_Input.lower() == "c":
+    #         order_new = (int(input("please enter what element you would like to replace")))
+    #         new_number = (int(input("please enter your number")))
+    #         print (math_List[order_new])
+    #         math_List[order_new] = new_number
+    #         print (math_List)
+    #
+    #     elif user_Input.lower() == "d":
+    #         count = 0
+    #         tally = 0
+    #         for i in range(len(math_List)):
+    #             tally += math_List[i]
+    #             count += 1
+    #         awnser = tally/count
+    #         print(awnser)
+    #
+    #     elif user_Input.lower() == "e":
+    #         big_number = max(math_List)
+    #         print(f"the largest number in the list is {big_number}")
+    #
+    #     elif user_Input.lower() == "x":
+    #             print("thank you for using this program")
+    #             break
+    #     elif user_Input.lower() == "f":
+    #       replace_delete = int(input("please what number would you like to replace"))
+    #       if replace_delete == (math_List):
+    #           math_List.remove(math_List[replace_delete])
+    #         max_number = 20
+    #     elif math_List > max_number:
+    #         print ("only a maximum of 20 numbers are allowed witihin the list")
+    #
+    #     else: user_Input.upper() == "A", "B", "C", "D", "E", "X","F",
+    #     print("Please enter a valid letter from the menu.")
 
 
 
-# def assessment_6():
-#
-#     arr = [6, 5, 3, 1, 2]
-#     for r in range(len(arr)):
-#         if arr[r] < arr[0]:
-#             temp_value = arr[0]
-#             arr[0] = arr[r]
-#             arr[r] = temp_value
-#     print (arr)
-#
-#
+def assessment_6():
+
+    arr = [6, 5, 3, 1, 2]
+    for r in range(len(arr)):
+        if arr[r] < arr[0]:
+            temp_value = arr[0]
+            temp_Value1 = arr[1]
+            temp_value2 = arr[2]
+            temp_value3 = arr[3]
+            temp_value4 = arr[4]
+            arr[0] = arr[r]
+            arr[r] = temp_value
+        for d in range(len(arr)):
+            if arr[d] < arr[1]:
+                arr[1] = arr[d]
+                arr[d] = arr[temp_Value1]
+        for c in range(len(arr)):
+            if arr[c] < arr[2]:
+                arr[2] = arr[c]
+                arr[c] = arr[temp_value2]
+        for e in range(len(arr)):
+            if arr[e] < arr[3]:
+                arr[3] = arr[e]
+                arr[e] = arr[temp_value3]
+        for f in range(len(arr)):
+            if arr[f] < arr[4]:
+                arr[4] = arr[f]
+                arr[f] = arr[temp_value4]
+
+    print (arr)
+
+
 # def assessment_7():
 #
 #     player1 = Character("luke",100,50,100)
@@ -231,6 +255,6 @@ if __name__ == "__main__":
     # print(assessment_2())
     # print(assessment_3())
     # print(assessment_4())
-    print(assessment_5())
-    # print(assessment_6())
+    # print(assessment_5())
+    print(assessment_6())
     # print(assessment_7())
